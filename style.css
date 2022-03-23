@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .header {
@@ -23,7 +23,7 @@ header {
 }
 
 .header-left {
-   flex-basis: 500px;
+    flex-basis: 500px;
 }
 
 .header-left h1 {
@@ -103,11 +103,11 @@ header {
     bottom: 470px;
 }
 
-.bottom-pag p{
+.bottom-pag p {
     margin-bottom: 80px;
 }
 
-.bottom-pag p:nth-child(1){
+.bottom-pag p:nth-child(1) {
     width: 500px;
 }
 
@@ -131,7 +131,7 @@ header {
 }
 
 .baby-food {
-    width: 627px;
+    width: 564px;
 }
 
 .img-holder .jar {
@@ -146,11 +146,12 @@ footer {
     min-height: 216px;
     background-color: var(--pink);
     padding-left: 50px;
+    padding-right: 50px;
     color: #09518E;
 }
 
 .my-footer {
-    width: 1320px;
+    /* width: 1320px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -167,22 +168,107 @@ footer {
     padding-right: 9px;
 }
 
-@media screen and (max-with: 768px) {
+@media screen and (max-width: 768px) {
     .header {
         background-color: var(--pink);
-        height: 216px;
+        height: 506px;
         color: white;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
+    }
+
+    .header-left {
+        flex-basis: 100px;
+    }
+
+
+    .header-left p {
+        display: block;
+        font-size: 22px;
+        text-align: right;
+        /* margin-top: -1000px; */
+        /* position: relative;
+    top: -30px; */
+    }
+
+    .header-right {
+        padding-top: 40px;
     }
 
     .menu {
         width: 767px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-    
+        justify-content: space-between;
+
     }
-    
+
+    .menu div:nth-child(3) {
+        flex-basis: 285px;
+    }
+
+    .header-img {
+        background-image: url(images/recettes-bebe-diversification-alimentaire.gif);
+        min-height: 336px;
+    }
+
+    .content {
+        width: 767px;
+        margin: 0 auto;
+    }
+
+    .par-require {
+        border-bottom: 4px dotted pink;
+        max-width: 550px;
+    }
+
+    .no-cook {
+        width: 737px;
+        height: 491px;
+        position: relative;
+        left: 600px;
+        bottom: 220px;
+    }
+
+    .bottom-pag {
+        position: relative;
+        bottom: 470px;
+    }
+
+    .bottom-pag p:nth-child(1) {
+        width: 500px;
+    }
+
+    .bottom-images-container {
+        position: relative;
+        width: 1488px;
+        margin: 0 auto;
+        top: -520px;
+        left: 50px;
+    }
+
+    .bottom-images {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        gap: 30px;
+    }
+
+.img-holder {
+    flex-basis: 627px;
+}
+
+.baby-food {
+    width: 564px;
+}
+
+.img-holder .jar {
+    width: 400px;
+}
+
+.img-holder .fruit {
+    width: 400px;
+}
+
 }
